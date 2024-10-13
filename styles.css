@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.links, button {
+    font-size: 16px;
+    font-weight: 400;
+    color:#17233D;
+    text-decoration: none;
+    margin-left: 2.5vw;
+}
+
+.links:hover {
+    color:#4CB538;
+}
+
+button {
+    width:121px;
+    height: 51px;
+    border:1px;
+    border-color:#4CB538;
+    border-radius: 10px;
+    color:white;
+    background-color:#6FBF44;
+    cursor:pointer;
+}
+
+button:hover {
+    opacity:70%;
+}
+
+
+img {
+    width:595.8px;
+    height: 500px;
+    display:inline-block;
+    position:absolute;
+    left:5vw;
+    top:30vh;
+}
+
+#container-right {
+    display:inline-block;
+    position:absolute;
+    left:50vw;
+    top:40vh;
+}
+
+h1 {
+    font-size: 65px;
+    font-weight: 700;
+    color: #161A49;
+    width:512px;
+    line-height: 82px;
+    letter-spacing: 0.6px;
+    text-align: left;
+    margin-bottom:5vh;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    width:493px;
+    line-height:33px;
+    letter-spacing: 0.5px;
+    color: #4B505A;
+    margin-bottom:5vh;
+}
+
+#last-link {
+    font-size: 20px;
+    font-weight:500;
+    line-height:27px;
+    letter-spacing:1px;
+    color: #6FBF44;
+    text-decoration:none;
+    display:inline-block;
+}
+
+#last-link:hover {
+    opacity:70%;
+}
+
+header {
+    position:absolute;
+    left: 1vw;
+    top:3vh;
+}
+
+/*telas menores*/
+@media screen and (max-width:1366px){
+
+    img {
+        left: 2.5vw;
+    }
+
+    #container-right {
+        left: 55vw;
+    }
+}
+
+/*tablets*/
+@media screen and (max-width:1135px){
+
+    header {
+        position: static;
+     display: block;
+     margin: 0 auto;
+        width: 100%; 
+        text-align: center; 
+        margin-top:3vh;
+    }
+
+    img{
+        position:static;
+        display: block;
+        margin:0 auto;
+        width: 536px;
+        height: 450px;
+        margin-top: 8vh;
+    }
+
+    #container-right {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        width: 100%; 
+        text-align: center; 
+}
+
+#container-right h1, 
+    #container-right p {
+        text-align: center; 
+        margin: 0 auto;
+        margin-top:2vh;
+    }
+
+    #last-link {
+        margin-top:4vh;
+    }
+}
+
+/*mobile */
+
+@media screen and (max-width:500px){
+
+   header {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    width: 100%; 
+    text-align: center; 
+    margin-top:1vh;
+   }
+
+    img{
+        width: 429px;
+        height: 360px;
+        margin-top:3vh;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2.5vh;
+    }
+
+    h1{
+        font-size:40px;
+        width: 350px;
+        line-height: 40px;
+    }
+
+    p{
+        width: 400px;
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+        /* position:absolute;
+        left: 80vw; */
+    }
+}
